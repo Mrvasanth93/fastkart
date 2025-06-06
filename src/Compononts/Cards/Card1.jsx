@@ -1,5 +1,5 @@
 import "./Card1.css"
-import sample from "../../assets/1742453278959_fgfg1.jpg"
+import sample from "../../assets/img (8).jpg"
 import wishlist from "../../assets/icons/icons8-heart-26 (1).png"
 import cartImg from "../../assets/icons/icons8-cart-24.png"
 const Card1 = () =>{
