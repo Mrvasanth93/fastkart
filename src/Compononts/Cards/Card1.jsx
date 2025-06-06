@@ -2,10 +2,16 @@ import "./Card1.css"
 import sample from "../../assets/img (8).jpg"
 import wishlist from "../../assets/icons/icons8-heart-26 (1).png"
 import cartImg from "../../assets/icons/icons8-cart-24.png"
+import { useLocation, useNavigate } from "react-router-dom"
 const Card1 = () =>{
+    const path = useLocation();
+    const navigate = useNavigate()
+    const openProduvtView = () =>{
+        navigate(`${path.pathname}/product-id`)
+    }
     return(
         <>
-            <div className="card1">
+            <div onClick={()=>{openProduvtView()}} className="card1">
                 <div className="card-top">
                     <div className="wishlist">
                         <img src={wishlist} alt="" />

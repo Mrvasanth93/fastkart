@@ -94,6 +94,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    background-color: transparent;
+    position: relative;
 }
 .nav-1 .nav-1-right .nav-btns div:hover{
     background-color: rgba(78, 78, 78, 0.103);
@@ -116,5 +118,8 @@
    }
    .nav-1 .nav-1-right .auth{
     display: none;
+   }
+   .nav-1 .nav-1-right .nav-btns .wish{
+    visibility: hidden;
    }
 }

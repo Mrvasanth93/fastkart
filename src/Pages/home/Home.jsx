@@ -15,8 +15,13 @@ import { useEffect, useState } from "react"
 import Services from "../../Compononts/Services"
 import Curosel from "../../Compononts/Curosel"
 import Banner from "../../Compononts/Banner"
+import { useNavigate } from "react-router-dom"
 
 const Home = () =>{
+    const navigate = useNavigate()
+    const handleNavigate = (locateTo) =>{
+        navigate(locateTo)
+    }
     const [curoselImages,setCuroselImages] = useState([curosel1,curosel2,curosel3])
     const [currentImage,setCurrentImage] = useState(0);
     useEffect(()=>{
@@ -45,32 +50,31 @@ const Home = () =>{
                 </div>
             </div>
             <div className="home-categories">
-                <div className="home-category category1">
-                    
+                <div onClick={()=>{handleNavigate("/fashion")}} className="home-category category1">
                     <div className="category-img"><img src={category3} alt="" /></div>
-                    <div className="category-name">Fashion</div>
+                    <div  className="category-name">Fashion</div>
                 </div>
-                <div className="home-category category2">
+                <div onClick={()=>{handleNavigate("/electronics")}} className="home-category category2">
                     <div className="category-img"><img src={category4} alt="" /></div>
                     <div className="category-name">Electronics</div>
                 </div>
-                <div className="home-category category3">
+                <div onClick={()=>{handleNavigate("/bags")}} className="home-category category3">
                     <div className="category-img"><img src={category2} alt="" /></div>
                     <div className="category-name">Bags</div>
                 </div>
-                <div className="home-category category4">
+                <div onClick={()=>{handleNavigate("/footwear")}} className="home-category category4">
                     <div className="category-img"><img src={category8} alt="" /></div>
                     <div className="category-name">Footwear</div>
                 </div>
-                <div className="home-category category5">
+                <div onClick={()=>{handleNavigate("/beauty")}} className="home-category category5">
                     <div className="category-img"><img src={category1} alt="" /></div>
                     <div className="category-name">Beauty</div>
                 </div>
-                <div className="home-category category6">
+                <div onClick={()=>{handleNavigate("/wellness")}} className="home-category category6">
                     <div className="category-img"><img src={category7} alt="" /></div>
                     <div className="category-name">Wellness</div>
                 </div>
-                <div className="home-category category7">
+                <div onClick={()=>{handleNavigate("/jwells")}} className="home-category category7">
                     <div className="category-img"><img src={category6} alt="" /></div>
                     <div className="category-name">Jewellery</div>
                 </div>

@@ -18,6 +18,7 @@ import FootWear from './Pages/Footewear/Footewear'
 import Jwells from './Pages/Jwelles/Jwelles'
 import Wellness from './Pages/Wellness/Wellness'
 import ProductView from './Compononts/ProductView'
+import Nav3 from './Compononts/nav/Nav3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,6 +42,7 @@ function App() {
         <Route path=":path/:productid" element={<ProductView/>}/>
       </Routes>
       <Footer/>
+      <Nav3/>
     </>
   )
 }

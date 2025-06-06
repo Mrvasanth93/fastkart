@@ -3,15 +3,16 @@ import logo from "../../assets/1744255975457_logo.jpg";
 import serchIcon from "../../assets/icons/icons8-find-30.png"
 import wishlist from "../../assets/icons/icons8-heart-26 (1).png"
 import cart from "../../assets/icons/icons8-cart-24.png"
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 const Nav1 = () =>{
+    const navigate = useNavigate();
     return(
         <>
             <div className="nav-1">
                 <div className="nav-1-left">
                         <img src={logo} alt="" />
                 </div>
-                <div className="nav-1-middle">
+                <div onClick={()=>{navigate("/serch")}} className="nav-1-middle">
                         <div className="serch-box">
                             <input placeholder="Serch for Products...." type="text" />
                         </div>
