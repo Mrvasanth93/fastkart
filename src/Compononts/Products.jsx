@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Card1 from "../Compononts/Cards/Card1";
 import "./PopularProducts.css"
-import Card2 from "./Cards/Card2";
 const Products = (probs) => {
     const scrollRate = useRef()
     const handleScroll = (option) =>{

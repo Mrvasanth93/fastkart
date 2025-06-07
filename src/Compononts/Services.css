@@ -3,6 +3,8 @@
     display: flex;
     align-items: start;
     justify-content: center;
+    border-top: 1px solid rgba(131, 131, 131, 0.425);
+    border-bottom: 1px solid rgba(131, 131, 131, 0.425);
 }
 .services .services-body{
     width: 98%;

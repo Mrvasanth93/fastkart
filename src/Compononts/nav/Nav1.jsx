@@ -1,5 +1,5 @@
 import "./Nav1.css"
-import logo from "../../assets/1744255975457_logo.jpg";
+import logo from "../../assets/IMG_20250606_130008.jpg";
 import serchIcon from "../../assets/icons/icons8-find-30.png"
 import wishlist from "../../assets/icons/icons8-heart-26 (1).png"
 import cart from "../../assets/icons/icons8-cart-24.png"
